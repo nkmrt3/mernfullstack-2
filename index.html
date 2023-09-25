@@ -22,7 +22,8 @@
             gap: 20px;
         }
 
-        .button {
+        /* Define different animations for each button */
+        .button:nth-child(1) {
             background-color: #222; /* Darker background color */
             color: #fff;
             border: none;
@@ -30,21 +31,44 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
+            animation: pulse 2s infinite;
             transition: background-color 0.3s, transform 0.2s;
         }
 
-        .button:hover {
-            background-color: #444; /* Lighter background color on hover */
-            transform: scale(1.1); /* Scale up on hover */
-        }
-
-        /* Add animations to individual buttons */
-        .button:nth-child(1) {
-            animation: pulse 2s infinite;
-        }
-
         .button:nth-child(2) {
+            background-color: #222; /* Darker background color */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
             animation: rotate 2s infinite;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .button:nth-child(3) {
+            background-color: #222; /* Darker background color */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            animation: bounce 2s infinite;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .button:nth-child(4) {
+            background-color: #222; /* Darker background color */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            animation: colorChange 2s infinite;
+            transition: background-color 0.3s, transform 0.2s;
         }
 
         /* Define animations */
@@ -57,6 +81,16 @@
         @keyframes rotate {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes colorChange {
+            0%, 100% { background-color: #222; }
+            50% { background-color: #444; }
         }
     </style>
 </head>
