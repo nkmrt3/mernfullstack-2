@@ -6,10 +6,10 @@
     <title>JS4</title>
 </head>
 <body>
-    <button onclick="date()">show date</button>
-    <p id = "date"></p>
-    <button onclick="time()">show Time</button>
-    <p id = "time"></p>
+    <button onclick="displayDate()">Show Date</button>
+    <p id="dateOutput"></p>
+    <button onclick="displayTime()">Show Time</button>
+    <p id="timeOutput"></p>
 </body>
 <script>
     const months = [
@@ -25,15 +25,17 @@
         "October",
         "November",
         "December",
-      ]
-    function date(){
-        d = new Date()
-        res = `${d.getDate()}/${months[d.getMonth()]}/${d.getFullYear()}`
-        document.getElementById("date").innerHTML = `${res}`
+    ];
+    
+    function displayDate() {
+        const currentDate = new Date();
+        const formattedDate = `${currentDate.getDate()}/${months[currentDate.getMonth()]}/${currentDate.getFullYear()}`;
+        document.getElementById("dateOutput").innerHTML = formattedDate;
     }
-    function time(){
-        const d = new Date()
-        document.getElementById("time").innerHTML = d
+
+    function displayTime() {
+        const currentTime = new Date();
+        document.getElementById("timeOutput").innerHTML = currentTime;
     }
 </script>
 </html>
