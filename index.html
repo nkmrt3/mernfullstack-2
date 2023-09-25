@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>/title>
+    <style>
+        body {
+            background-color: #333; /* Dark background color */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .button {
+            background-color: #222; /* Darker background color */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .button:hover {
+            background-color: #444; /* Lighter background color on hover */
+            transform: scale(1.1); /* Scale up on hover */
+        }
+
+        /* Add animations to individual buttons */
+        .button:nth-child(1) {
+            animation: pulse 2s infinite;
+        }
+
+        .button:nth-child(2) {
+            animation: rotate 2s infinite;
+        }
+
+        /* Define animations */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+
+
+  
+    <a href="task1.html" class="button-container"><div class="button">Task 1</div></a>
+    <a href="task2.html" class="button-container"><div class="button">Task 2</div></a>
+    <a href="task3.html" class="button-container"><div class="button">Task 3</div></a>
+    <a href="task4.html" class="button-container"><div class="button">Task 4</div></a>
+    <a href="task5.html" class="button-container"><div class="button">Task 5</div></a>
+    <a href="task6.html" class="button-container"><div class="button">Task 6</div></a>
+    <p> JS task Start</p>
+    <a href="task7.html" class="button-container"><div class="button">Task 7</div></a>
+    <a href="task8.html" class="button-container"><div class="button">Task 8</div></a>
+    <a href="task9.html" class="button-container"><div class="button">Task 9</div></a>
+    <a href="task10.html" class="button-container"><div class="button">Task 10</div></a>
+    <a href="task11.html" class="button-container"><div class="button">Task 11</div></a>
+    <a href="task12.html" class="button-container"><div class="button">Task 12</div></a>
+    <a href="task13.html" class="button-container"><div class="button">Task 13</div></a>
+    <a href="task14.html" class="button-container"><div class="button">Task 14</div></a>
+  </div>
+</body>
+</html>
