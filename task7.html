@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS1</title>
+    <title>Number Reversal</title>
 </head>
 <style>
     p{
@@ -12,27 +12,25 @@
 </style>
 <body>
     <p>
-        Example x : 
+        Input Number: 
     </p>
-    <input type="number" name="" id="num" onchange="reverse()">
+    <input type="number" name="" id="inputNum" onchange="reverseNumber()">
     <br>
     <br>
-    <p id = "answer">Expected Output: </p>
+    <p id="output">Reversed Number: </p>
 </body>
 <script>
-    function reverse()
-    {
-        num1 = document.getElementById("num").value  
-        let temp1 = num1
-        let ans = 0
-        let rem = 0
-        while(temp1>0)
-        {
-            rem = temp1%10
-            ans = ans*10 + rem
-            temp1 = Math.floor(temp1 / 10)
+    function reverseNumber() {
+        const inputNumber = document.getElementById("inputNum").value;
+        let temp = inputNumber;
+        let reversedNumber = 0;
+        let remainder = 0;
+        while (temp > 0) {
+            remainder = temp % 10;
+            reversedNumber = reversedNumber * 10 + remainder;
+            temp = Math.floor(temp / 10);
         }
-        document.getElementById("answer").innerHTML = `Expected Output: ${ans}`
+        document.getElementById("output").innerHTML = `Reversed Number: ${reversedNumber}`;
     }
 </script>
 </html>
